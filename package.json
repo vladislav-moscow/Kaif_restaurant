@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+		"server": "json-server --watch db.json",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "json-server": "^1.0.0-alpha.23",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
