@@ -891,29 +891,56 @@
   ],
 	"cocktails":[
 		{
-			"title": "Aperol Sprtiz",
-			"price": 20,
-			"tags": "Aperol | Villa Marchesi prosecco | soda | 30 ml"
+			"title": "Апероль-Спритц",
+			"price": 760,
+			"tags": "Апероль | Villa Marchesi просекко | Содовая | 30 мл"
 		},
 		{
-			"title": "Dark 'N' Stormy",
-			"price": 16,
-			"tags": "Dark rum | Ginger beer | Slice of lime"
+			"title": "Тьма и буря",
+			"price": 880,
+			"tags": "Темный ром | Имбирное пиво | Ломтик лайма"
 		},
 		{
-			"title": "Daiquiri",
-			"price": 10,
-			"tags": "Rum | Citrus juice | Sugar"
+			"title": "Дайкири",
+			"price": 790,
+			"tags": "Ром | Цитрусовый сок | Сахар"
 		},
 		{
-			"title": "Old Fashioned",
-			"price": 31,
-			"tags": "Bourbon | Brown sugar | Angostura Bitters"
+			"title": "Олд фешен",
+			"price": 660,
+			"tags": "Бурбон | Коричневый сахар | Биттеры Angostura"
 		},
 		{
-			"title": "Negroni",
-			"price": 26,
-			"tags": "Gin | Sweet Vermouth | Campari | Orange garnish"
+			"title": "Негрони",
+			"price": 820,
+			"tags": "Джин | Сладкий вермут | Кампари | Апельсиновый гарниш"
+		}
+	],
+	"wine": [
+		{
+			"title": "Chapel Hill Shiraz",
+			"price": 560,
+			"tags": "бокал | Бутылка"
+		},
+		{
+			"title": "Catena Malbee",
+			"price": 590,
+			"tags": "бокал | Бутылка"
+		},
+		{
+			"title": "La Vieillw Rose",
+			"price": 440,
+			"tags": "бокал | Бутылка"
+		},
+		{
+			"title": "Rhino Pale Ale",
+			"price": 3100,
+			"tags": "Бутылка | 750 ml"
+		},
+		{
+			"title": "Irish Guinness",
+			"price": 2600,
+			"tags": "Бутылка | 750 ml"
 		}
 	],
   "profile": {
