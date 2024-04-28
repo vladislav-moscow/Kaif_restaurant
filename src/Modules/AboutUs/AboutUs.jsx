@@ -1,7 +1,9 @@
 import Image from 'next/image';
+
 import logo_main from '@/assets/logo.svg';
 import spoon from '@/assets/spoon.svg';
 import knife from '@/assets/knife.png';
+
 import './aboutUs.css';
 
 const AboutUs = () => (

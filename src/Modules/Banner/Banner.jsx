@@ -1,8 +1,10 @@
-import './banner.css';
 import Link from 'next/link';
 import Image from 'next/image';
+
 import { SubHeading } from '@/components';
 import welcomeImage from '@/assets/welcome.png';
+
+import './banner.css';
 
 const Banner = () => {
 	return (
