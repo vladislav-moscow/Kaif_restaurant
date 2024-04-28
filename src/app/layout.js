@@ -1,6 +1,7 @@
+import Navbar from '@/Modules/Navbar/Navbar';
+
 import './globals.css';
 import './app.css';
-import Navbar from '@/Modules/Navbar/Navbar';
 
 export const metadata = {
 	title: 'KAIF',
