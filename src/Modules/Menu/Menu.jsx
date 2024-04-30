@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -7,6 +7,7 @@ import { SubHeading, MenuItem } from '@/components';
 import menuImage from '@/assets/menu.png';
 
 import './menu.css';
+import Link from 'next/link';
 
 const Menu = () => {
 	const [dataWine, setDataWine] = useState([]);
@@ -70,7 +71,7 @@ const Menu = () => {
 
 			<div style={{ marginTop: 15 }}>
 				<button type='button' className='custom__button'>
-					Узнать больше
+					<Link href={'/menu'}>Узнать больше </Link>
 				</button>
 			</div>
 		</section>
