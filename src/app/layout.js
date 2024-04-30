@@ -2,6 +2,7 @@ import Navbar from '@/Modules/Navbar/Navbar';
 
 import './globals.css';
 import './app.css';
+import Footer from '@/Modules/Footer/Footer';
 
 export const metadata = {
 	title: 'KAIF',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
 			<body>
 				<Navbar/>
 				{children}
+				<Footer/>
 				</body>
 		</html>
 	);
