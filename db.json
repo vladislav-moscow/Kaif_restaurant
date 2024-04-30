@@ -891,26 +891,31 @@
   ],
 	"cocktails":[
 		{
+			"id": 1,
 			"title": "Апероль-Спритц",
 			"price": 760,
 			"tags": "Апероль | Villa Marchesi просекко | Содовая | 30 мл"
 		},
 		{
+			"id": 2,
 			"title": "Тьма и буря",
 			"price": 880,
 			"tags": "Темный ром | Имбирное пиво | Ломтик лайма"
 		},
 		{
+			"id": 3,
 			"title": "Дайкири",
 			"price": 790,
 			"tags": "Ром | Цитрусовый сок | Сахар"
 		},
 		{
+			"id": 4,
 			"title": "Олд фешен",
 			"price": 660,
 			"tags": "Бурбон | Коричневый сахар | Биттеры Angostura"
 		},
 		{
+			"id": 5,
 			"title": "Негрони",
 			"price": 820,
 			"tags": "Джин | Сладкий вермут | Кампари | Апельсиновый гарниш"
@@ -918,29 +923,60 @@
 	],
 	"wine": [
 		{
+			"id": 1,
 			"title": "Chapel Hill Shiraz",
 			"price": 560,
 			"tags": "бокал | Бутылка"
 		},
 		{
+			"id": 2,
 			"title": "Catena Malbee",
 			"price": 590,
 			"tags": "бокал | Бутылка"
 		},
 		{
+			"id": 3,
 			"title": "La Vieillw Rose",
 			"price": 440,
 			"tags": "бокал | Бутылка"
 		},
 		{
+			"id": 4,
 			"title": "Rhino Pale Ale",
 			"price": 3100,
 			"tags": "Бутылка | 750 ml"
 		},
 		{
+			"id": 5,
 			"title": "Irish Guinness",
 			"price": 2600,
 			"tags": "Бутылка | 750 ml"
+		}
+	],
+	"awards": [
+		{
+			"id": 1,
+			"imgUrl": "/images/award02.png",
+			"title": "«The best in the industry 2023»",
+			"subtitle": "Профессиональная премия заслуженным деятелям ресторанного бизнеса России."
+		},
+		{
+			"id": 2,
+			"imgUrl": "/images/award01.png",
+			"title": "«Guest Choice 2022»",
+			"subtitle": "Альтернативный экспертному выбор лучшей ресторанной концепции года."
+		},
+		{
+			"id": 3,
+			"imgUrl": "/images/award05.png",
+			"title": "«Wheretoeat Russia 2023»",
+			"subtitle": "Национальная ресторанная премия."
+		},
+		{
+			"id": 4,
+			"imgUrl": "/images/award03.png",
+			"title": "«Interior of the year 2018»",
+			"subtitle": "Лучшие интерьеры ресторанов."
 		}
 	],
   "profile": {
