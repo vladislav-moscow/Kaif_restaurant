@@ -18,8 +18,6 @@ const Navbar = () => {
 				<Image
 					src={logo}
 					alt='app__logo'
-					width={80}
-					height={43}
 				/>
 			</div>
 			<ul className='app__navbar-links'>

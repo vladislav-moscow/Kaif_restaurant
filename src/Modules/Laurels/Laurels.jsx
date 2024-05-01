@@ -1,8 +1,8 @@
 'use client';
 import Image from 'next/image';
 
-import { SubHeading } from '../../components';
-//import { images, data } from '../../constants';
+import SubHeading from '@/components/SubHeading/SubHeading';
+
 import laurels from '@/assets/laurels.png';
 
 import './laurels.css';

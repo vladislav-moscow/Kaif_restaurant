@@ -3,7 +3,8 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { SubHeading, MenuItem } from '@/components';
+import MenuItem from '@/components/MenuItem/MenuItem';
+import SubHeading from '@/components/SubHeading/SubHeading';
 import menuImage from '@/assets/menu.png';
 
 import './menu.css';

@@ -4,13 +4,19 @@
   justify-content: space-between;
   align-items: center;
   background: var(--color-black);
-  padding: 1rem 6rem;
+
+  padding: 1rem 2rem;
 }
 
 .app__navbar-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.app__navbar-logo img {
+  width: 80px;
+  margin-top: 10px;
 }
 
 .app__navbar-links {
@@ -39,11 +45,11 @@
 .app__navbar-login a {
   margin: 0 1rem;
   text-decoration: none;
+  transition: .5s ease;
 }
 
 .app__navbar-login a:hover {
   border-bottom: 1px solid var(--color-golden);
-	margin-bottom: -1px;
 }
 
 .app__navbar-login div {

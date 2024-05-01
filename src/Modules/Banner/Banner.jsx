@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { SubHeading } from '@/components';
+import SubHeading from '@/components/SubHeading/SubHeading';
+
 import welcomeImage from '@/assets/welcome.png';
 
 import './banner.css';

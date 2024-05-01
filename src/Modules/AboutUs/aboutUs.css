@@ -34,6 +34,7 @@
 }
 
 .app__aboutus-content_knife img {
+	width: auto;
   height: 910px;
 }
 

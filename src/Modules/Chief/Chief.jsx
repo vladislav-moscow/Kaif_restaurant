@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
-import { SubHeading } from '@/components';
+import SubHeading from '@/components/SubHeading/SubHeading';
+
 import signImage from '@/assets/sign.png';
 import quoteImage from '@/assets/quote.png';
 import chefImage from '@/assets/chef.png';

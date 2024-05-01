@@ -8,7 +8,6 @@
   flex-direction: column;
   overflow-y: hidden;
   background: var(--color-black);
-  padding-top: 0;
 }
 
 .app__footer-links {
@@ -29,9 +28,19 @@
   text-align: center;
 }
 
+.app__footer-links_logo {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .app__footer-links_logo img:first-child {
   width: 100px;
   margin-bottom: 0.75rem;
+	display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -40,6 +49,9 @@
 }
 
 .app__footer-links_icons {
+	display: flex;
+	align-items:center;
+	justify-content: center;
   margin-top: 0.5rem;
 }
 
