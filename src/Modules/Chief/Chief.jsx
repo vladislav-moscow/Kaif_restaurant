@@ -1,3 +1,4 @@
+'use server';
 import Image from 'next/image';
 
 import SubHeading from '@/components/SubHeading/SubHeading';

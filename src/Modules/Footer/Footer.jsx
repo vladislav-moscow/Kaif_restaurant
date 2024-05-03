@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+'use server';
 import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 import Image from 'next/image';
 

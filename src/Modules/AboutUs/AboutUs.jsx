@@ -1,4 +1,8 @@
+'use server';
+
 import Image from 'next/image';
+
+import Button from '@/components/Button/Button';
 
 import logo_main from '@/assets/logo.svg';
 import spoon from '@/assets/spoon.svg';
@@ -23,9 +27,9 @@ const AboutUs = () => (
 					ИСТОРИЧЕСКОЙ МОСКВЫ. ЭТО КОЛЛАБОРАЦИЯ СТИЛЯ, НЕВЕРОЯТНОГО ВКУСА И
 					ВЫСОКИХ СТАНДАРТОВ СЕРВИСА.
 				</p>
-				<button type='button' className='custom__button'>
+				<Button type={'button'} className={'custom__button'}>
 					Узнать больше
-				</button>
+				</Button>
 			</div>
 			<div className='app__aboutus-content_knife flex__center'>
 				<Image src={knife} alt='about_knife' />
@@ -38,9 +42,9 @@ const AboutUs = () => (
 					ПРОРАБОТАН ДО МЕЛОЧЕЙ, РАСТВОРЯЕТ В СВОЕЙ АТМОСФЕРЕ И ОТКРЫВАЕТ ДВЕРЬ
 					В МИР НЕВЕРОЯТНЫХ ВКУСОВ.
 				</p>
-				<button type='button' className='custom__button'>
+				<Button type={'button'} className={'custom__button'}>
 					Узнать больше
-				</button>
+				</Button>
 			</div>
 		</div>
 	</section>

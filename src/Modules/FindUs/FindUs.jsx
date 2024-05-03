@@ -1,6 +1,9 @@
+'use server';
 import Image from "next/image";
 
+import Button from "@/components/Button/Button";
 import SubHeading from "@/components/SubHeading/SubHeading";
+
 import findus from "@/assets/findus.png";
 
 const FindUs = () => (
@@ -21,15 +24,10 @@ const FindUs = () => (
         <p className="p__opensans">ПН - ПТ: 12:00 - 00:00 </p>
         <p className="p__opensans">Сб - ВС: 12:00 - 02:00 </p>
       </div>
-      <button
-        type="button"
-        className="custom__button"
-        style={{ marginTop: "2rem" }}
-      >
-        Посетите нас
-      </button>
+			<Button type={"button"} className={"custom__button btnFindUs"}>
+				Посетите нас
+			</Button>
     </div>
-
     <div className="app__wrapper_img">
 			<Image src={findus} alt="finus_img" />
     </div>
