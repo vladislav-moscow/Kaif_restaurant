@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 
 import spoon from '@/assets/spoon.svg';

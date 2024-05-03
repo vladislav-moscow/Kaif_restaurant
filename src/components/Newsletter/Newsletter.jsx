@@ -1,4 +1,7 @@
+'use server';
 import SubHeading from '@/components/SubHeading/SubHeading';
+import Button from '../Button/Button';
+
 import './newsletter.css';
 
 const Newsletter = () => (
@@ -12,9 +15,9 @@ const Newsletter = () => (
 		</div>
 		<div className='app__newsletter-input flex__center'>
 			<input type='email' placeholder='Введите свой адрес электронной почты' />
-			<button type='button' className='custom__button'>
-				Подписаться
-			</button>
+			<Button type={'button'} className={'custom__button'}>
+			Подписаться
+			</Button>
 		</div>
 	</div>
 );
