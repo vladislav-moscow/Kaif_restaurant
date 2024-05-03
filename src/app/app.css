@@ -101,6 +101,14 @@
   width: 45px;
 }
 
+.btnFindUs {
+	margin-top: 2rem;
+}
+
+.bottomBorder {
+	border: 1px solid transparent;
+}
+
 @media screen and (min-width: 2000px) {
   .custom__button,
   .p__cormorant {
