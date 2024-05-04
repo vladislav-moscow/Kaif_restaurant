@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import logo from '@/assets/logo.svg';
-import MenuBurger from '@/components/MenuBurger/MenuBurger';
+import MenuBurger from '@/components/MenuItem/MenuBurger';
 
 import './navbar.css';
 

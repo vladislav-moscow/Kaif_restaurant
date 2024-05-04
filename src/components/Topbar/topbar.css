@@ -1,0 +1,28 @@
+.topbar__links {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  padding: 0 250px;
+}
+
+.topbar__links-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--color-white);
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.topbar__links-link {
+  color: var(--color-white);
+  line-height: 1.55;
+  font-size: 20px;
+  font-family: var(--font-alt);
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.topbar__links-link:hover {
+  color: var(--color-gray);
+}
