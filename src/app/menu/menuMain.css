@@ -1,0 +1,37 @@
+.app__menu {
+  background-color: var(--color-black);
+}
+
+.app__menu-topbar {
+  position: relative;
+}
+
+.topbar__videoBackground {
+  background-position: center center;
+}
+
+.topbar__videoBackground > video {
+  object-fit: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 500px;
+  opacity: 0.3;
+}
+
+.app__menu-title {
+  position: absolute;
+  font-size: 4rem;
+  color: var(--color-white);
+  left: calc(50% - 136px);
+  top: 326px;
+  font-family: var(--font-alt);
+  font-weight: 300;
+}
+
+.menuItem__cart {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 330px;
+}
+
