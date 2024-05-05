@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 
 import meall from '@/assets/meal.mp4';
+import './videoComponents.css';
 
 const VideoComponent = () => {
 	const [playVideo, setPlayVideo] = useState(false);
