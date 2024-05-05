@@ -1,0 +1,79 @@
+.app__menu-topbar {
+	position: relative;
+}
+
+.app__menuitem {
+	width: 100%;
+	margin: 1rem 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.app__menuitem-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.app__menuitem-sub {
+	width: 100%;
+	margin-top: 0.2rem;
+}
+
+.app__menuitem-name {
+	flex: 1;
+}
+
+.app__menuitem-dash {
+	width: 90px;
+	height: 1px;
+	background: var(--color-golden);
+	margin: 0 1rem;
+}
+
+.app__menuitem-price {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.app__menu-title {
+	position: absolute;
+	font-size: 4rem;
+	color: var(--color-white);
+	left: calc(50% - 136px);
+	top: 326px;
+	font-family: var(--font-alt);
+	font-weight: 300;
+}
+
+.menuItem__cart {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0 330px;
+}
+
+.menuItem {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: var(--color-white);
+}
+
+.menuItem-img {
+	width: 232px;
+	height: 340px;
+	object-fit: cover;
+}
+
+.menuItem-title {
+	width: 232px;
+	font-size: 1rem;
+}
+
+.menuItem-price {
+	margin-top: 10px;
+	font-size: 14px;
+	float: right;
+}

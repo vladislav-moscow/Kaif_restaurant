@@ -1,33 +1,19 @@
-'use client';
-import axios from 'axios';
+'use server';
+import Topbar from '@/components/Topbar/Topbar';
+import MenuTitle from '@/components/MenuItem/MenuTitle';
+import VideoComponentMenu from '@/components/VideoComponent/VideoComponentMenu';
 
 import './menuMain.css';
-import Topbar from '@/components/Topbar/Topbar';
-import { useEffect, useState } from 'react';
-import kaif from '@/assets/videoKaif.mp4';
-import MenuTitle from '@/components/MenuItem/MenuTitle';
 
 const MainMenu = () => {
-	const [data, setData] = useState([]);
-
-	useEffect(() => {
-		axios.get('http://localhost:3001/titleMenu').then((res) => {
-			setData(res.data);
-		});
-	}, []);
-
 	return (
-		<div className='app__menu'>
+		<>
 			<div className='app__menu-topbar'>
-				<div className='topbar__video'>
-					<div className='topbar__videoBackground'>
-						<video src={kaif} preload='auto' playsInline autoPlay muted></video>
-					</div>
-				</div>
+				<VideoComponentMenu />
 				<Topbar />
-				<MenuTitle data={data} />
+				<MenuTitle/>
 			</div>
-		</div>
+		</>
 	);
 };
 
