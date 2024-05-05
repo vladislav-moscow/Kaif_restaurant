@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -18,13 +19,15 @@ const Topbar = () => {
 			<ul className='topbar__links-box'>
 				{data.map((elem) => (
 					<li key={elem.id}>
-						<h3
-							className='topbar__links-link'
-							type='submit'
-							title={elem.subTitle}
-						>
-							{elem.title}
-						</h3>
+						<Link href={`/menu/${elem.subTitle}`} dataa={data}>
+							<h3
+								className='topbar__links-link'
+								type='submit'
+								title={elem.subTitle}
+							>
+								{elem.title}
+							</h3>
+						</Link>
 					</li>
 				))}
 			</ul>

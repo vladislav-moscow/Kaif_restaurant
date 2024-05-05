@@ -1,9 +1,19 @@
 'use client';
 import Link from 'next/link';
-import './menuTitle.css';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-const MenuTitle = ({ data }) => {
+import './menuTitle.css';
+
+const MenuTitle = () => {
+	const [data, setData] = useState([]);
+
+	useEffect(() => {
+		axios.get('http://localhost:3001/titleMenu').then((res) => {
+			setData(res.data);
+		});
+	}, []);
 	 
 	return (
 		<div className='menu__title'>
