@@ -12,7 +12,7 @@ import './footer.css';
 
 const Footer = () => {
 	return (
-		<div className='app__footer section__padding' id='login'>
+		<footer className='app__footer section__padding' id='login'>
 			<FooterOverlay />
 			<Newsletter />
 
@@ -50,7 +50,7 @@ const Footer = () => {
 			<div className='footer__copyright'>
 				<p className='p__opensans'>2023 Kaif. Все права защищены.</p>
 			</div>
-		</div>
+		</footer>
 	);
 };
 
