@@ -10,8 +10,9 @@
 	--color-black: #0c0c0c;
 	--color-gray: #545454;
 	--color-crimson: #f5efdb;
-	--color-grey: #aaaaaa;
+	--color-grey: #8a8a8a;
 	--color-white: #ffffff;
+	--color-grey-secondary: #e0e0e0;
 }
 
 * {
@@ -34,6 +35,18 @@ a {
 
 .app__menu {
 	background-color: var(--color-black);
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 @-webkit-keyframes slide-bottom {
