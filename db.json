@@ -10,55 +10,55 @@
       "id": 2,
       "title": "Закуски",
       "subTitle": "snacks",
-      "image": ""
+      "image": "/images/snacks.jpg"
     },
     {
       "id": 3,
       "title": "Салаты",
       "subTitle": "salads",
-      "image": ""
+      "image": "/images/salad.jpg"
     },
     {
       "id": 4,
       "title": "Супы",
       "subTitle": "soup",
-      "image": ""
+      "image": "/images/soup.jpg"
     },
     {
       "id": 5,
       "title": "Горячее",
       "subTitle": "hotdishes",
-      "image": ""
+      "image": "/images/hotdishes.jpg"
     },
     {
       "id": 6,
       "title": "Пицца",
       "subTitle": "pizza",
-      "image": ""
+      "image": "/images/pizza.jpg"
     },
     {
       "id": 7,
       "title": "Гарниры",
       "subTitle": "sidedishes",
-      "image": ""
+      "image": "/images/sidedishes.jpg"
     },
     {
       "id": 8,
       "title": "Азия",
       "subTitle": "asia",
-      "image": ""
+      "image": "/images/asia.jpg"
     },
     {
       "id": 9,
       "title": "Десерты",
       "subTitle": "desserts",
-      "image": ""
+      "image": "/images/dessert.jpg"
     },
     {
       "id": 10,
       "title": "Напитки",
       "subTitle": "drinks",
-      "image": ""
+      "image": "/images/drink.jpg"
     }
   ],
   "breakfast": [
