@@ -1,14 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-'use server';
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import logo from '@/assets/logo.svg';
 import MenuBurger from '@/components/MenuItem/MenuBurger';
+import ModalOrder from '@/components/ModalOrder/ModalOrder';
 
 import './navbar.css';
+import { useEffect, useRef, useState } from 'react';
 
 const Navbar = () => {
+	const [isOpen, setIsOpen] = useState(false);
+	const modalRef = useRef(null);
+
 	return (
 		<nav className='app__navbar'>
 			<div className='app__navbar-logo'>
@@ -36,12 +41,13 @@ const Navbar = () => {
 					Вход / Регистрация
 				</Link>
 				<div />
-				<a href='/' className='p__opensans bottomBorder'>
+				<button onClick={()=> setIsOpen(true)} className='p__opensans bottomBorder'>
 					Заказ столика
-				</a>
+				</button>
 			</div>
+			<ModalOrder open={isOpen} modalRef={modalRef} onClose={() => setIsOpen(false)} />
 			<div className='app__navbar-smallscreen'>
-				<MenuBurger/>
+				<MenuBurger />
 			</div>
 		</nav>
 	);
