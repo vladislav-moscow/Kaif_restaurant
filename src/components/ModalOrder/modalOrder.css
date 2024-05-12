@@ -114,43 +114,6 @@ select::part(marker) {
 	align-content: stretch;
 }
 
-.timeGap {
-	opacity: 0;
-	position: absolute;
-}
-
-.time-gap-label {
-	display: block;
-	margin-bottom: 12px;
-	width: 66px;
-	font-style: normal;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	cursor: default;
-	font-size: 16px;
-	height: 41px;
-	line-height: 41px;
-	text-align: center;
-	background: var(--color-grey-secondary);
-	color: #000;
-	margin-right: 11px;
-	transition: background 0.15s ease;
-	appearance: none;
-}
-
-.gap-text {
-	display: inline;
-	pointer-events: none;
-	font-style: normal;
-	user-select: none;
-	cursor: default;
-	font-size: 16px;
-	line-height: 41px;
-	text-align: center;
-	color: #000;
-}
-
 .form-date__comment-input {
 	width: 100%;
 	background: #fff;
@@ -189,3 +152,9 @@ select::part(marker) {
 	padding: 5px 15px;
 	background-color: var(--color-black);
 }
+
+.modal-footer__btn:disabled {
+	background-color: var(--color-grey-secondary);
+	color: var(--color-grey);
+}
+
