@@ -37,7 +37,7 @@ a {
 	background-color: var(--color-black);
 }
 
-.flex {
+.flexBlock {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
