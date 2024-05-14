@@ -8,9 +8,8 @@ import TimeOption from '../TimeOption/TimeOption';
 
 import './modalOrder.css';
 
-
 const ModalOrder = ({ open, modalRef, onClose }) => {
-	const [dates, setDates] = useState([]);// Состояние для хранения списка дат
+	const [dates, setDates] = useState([]); // Состояние для хранения списка дат
 	const [selectedTime, setSelectedTime] = useState(''); // выбранное время
 	const [formData, setFormData] = useState({
 		id: '',
@@ -74,22 +73,25 @@ const ModalOrder = ({ open, modalRef, onClose }) => {
 			id: nanoid(),
 		};
 		try {
-				const response = await axios.post('http://localhost:3001/tableReservation', formDataWithId);
-				console.log(response.data);
-				// Обработка успешного ответа от сервера
+			const response = await axios.post(
+				'http://localhost:3001/tableReservation',
+				formDataWithId
+			);
+			console.log(response.data);
+			// Обработка успешного ответа от сервера
 
-				//сброс данных
+			//сброс данных
 
-				setFormData({
-					id: '',
-					date: '',
-					personCount: 2,
-					сomment: '',
-					gap: '',
+			setFormData({
+				id: '',
+				date: '',
+				personCount: 2,
+				сomment: '',
+				gap: '',
 			});
 		} catch (error) {
-				console.error('Error submitting form:', error);
-				// Обработка ошибки при отправке данных на сервер
+			console.error('Error submitting form:', error);
+			// Обработка ошибки при отправке данных на сервер
 		}
 	};
 
@@ -113,7 +115,7 @@ const ModalOrder = ({ open, modalRef, onClose }) => {
 
 	return (
 		<dialog ref={modalRef} open={open} className='modal-order'>
-			<header className='modal-header flex'>
+			<header className='modal-header flexBlock'>
 				<h2 className='modal-header__title'>Бронирование в Kaif</h2>
 				<button
 					type='button'
@@ -129,27 +131,27 @@ const ModalOrder = ({ open, modalRef, onClose }) => {
 				className='modal-form'
 				id='reservationForm'
 			>
-				<div className='form-date__wrapper flex'>
+				<div className='form-date__wrapper flexBlock'>
 					<label htmlFor='date'>
 						<h4 className='form-date__title'>Дата брони</h4>
-							<select
-								value={formData.date}
-								onChange={handleChangeFormData}
-								name='date'
-								className='form-date__select'
-								id='date'
-							>
-								<option value=''>Выберите дату</option>
-								{dates.map((date, index) => (
-									<option key={index} value={date}>
-										{date}
-									</option>
-								))}
-							</select>
+						<select
+							value={formData.date}
+							onChange={handleChangeFormData}
+							name='date'
+							className='form-date__select'
+							id='date'
+						>
+							<option value=''>Выберите дату</option>
+							{dates.map((date, index) => (
+								<option key={index} value={date}>
+									{date}
+								</option>
+							))}
+						</select>
 					</label>
 					<label htmlFor='counter' className='counter-visitors'>
 						<h4 className='form-date__title'>Кол-во человек</h4>
-						<div className='flex'>
+						<div className='flexBlock'>
 							<button
 								type='button'
 								className='form-date__btn'
@@ -165,7 +167,7 @@ const ModalOrder = ({ open, modalRef, onClose }) => {
 								autoComplete='new-password'
 								maxLength={2}
 								readOnly
-								className='form-date__visitors flex no-spin'
+								className='form-date__visitors flexBlock no-spin'
 							/>
 							<button
 								type='button'
@@ -349,7 +351,7 @@ const ModalOrder = ({ open, modalRef, onClose }) => {
 					<span> политики конфиденциальности</span>
 				</p>
 			</form>
-			<footer className='modal-footer flex'>
+			<footer className='modal-footer flexBlock'>
 				<div></div>
 				<button
 					type='submit'

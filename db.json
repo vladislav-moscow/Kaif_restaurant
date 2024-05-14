@@ -1020,6 +1020,36 @@
       "valueSubscribe": "test@test.com"
     }
   ],
+  "user": [
+    {
+      "id": "d9a6",
+      "username": "user123",
+      "email": "user123@mail.ru",
+      "password": "user123",
+      "confirmPassword": "user123"
+    },
+    {
+      "id": "5c31",
+      "username": "admin",
+      "email": "admin@mail.ru",
+      "password": "admin",
+      "confirmPassword": "admin"
+    },
+    {
+      "id": "e99c",
+      "username": "user1",
+      "email": "user12@mail.ru",
+      "password": "user1",
+      "confirmPassword": "user1"
+    },
+    {
+      "id": "8a99",
+      "username": "user1",
+      "email": "user12@mail.ru",
+      "password": "user1",
+      "confirmPassword": "user1"
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
