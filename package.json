@@ -14,6 +14,7 @@
     "json-server": "^1.0.0-alpha.23",
     "nanoid": "^5.0.7",
     "next": "14.2.3",
+    "next-auth": "^4.24.7",
     "next-videos": "^1.4.1",
     "react": "^18",
     "react-dom": "^18",
