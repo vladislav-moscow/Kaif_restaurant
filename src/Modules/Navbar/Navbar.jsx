@@ -2,19 +2,29 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRef, useState } from 'react';
 
 import logo from '@/assets/logo.svg';
 import MenuBurger from '@/components/MenuItem/MenuBurger';
 import ModalOrder from '@/components/Modal/ModalOrder';
+import { useUser } from '@/context/UserContext';
 
 import './navbar.css';
-import { useRef, useState } from 'react';
-import ModalAuth from '@/components/Modal/ModalAuth';
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	const [isOpenLogin, setIsOpenLogin] = useState(false);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const modalRef = useRef(null);
+	const { user, setUser } = useUser();
+
+	const handleLogout = () => {
+		setUser(null);
+		setIsMenuOpen(false);
+	};
+
+	const toggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
 
 	return (
 		<nav className='app__navbar'>
@@ -39,10 +49,29 @@ const Navbar = () => {
 				</li>
 			</ul>
 			<div className='app__navbar-login'>
-				<Link href='/auth/register' className='p__opensans bottomBorder'>
-					Вход / Регистрация
-				</Link>
-				<div />
+				{user ? (
+					<div className='user-menu-container'>
+						<span
+							className='p__opensans border-b-golden bottomBorder cursor-pointer'
+							onClick={toggleMenu}
+						>
+							{user.username}
+						</span>
+						<div className={`user-menu ${isMenuOpen ? 'block' : 'hidden'}`}>
+							<Link href='/profile' className='user-menu-item'>
+								Профиль
+							</Link>
+							<button onClick={handleLogout} className='user-menu-item'>
+								Выйти
+							</button>
+						</div>
+					</div>
+				) : (
+					<Link href='/auth/register' className='p__opensans bottomBorder'>
+						Вход / Регистрация
+					</Link>
+				)}
+				<div className='rightBorder' />
 				<button
 					onClick={() => setIsOpen(true)}
 					className='p__opensans bottomBorder'
@@ -54,11 +83,6 @@ const Navbar = () => {
 				open={isOpen}
 				modalRef={modalRef}
 				onClose={() => setIsOpen(false)}
-			/>
-			<ModalAuth
-				open={isOpenLogin}
-				modalRef={modalRef}
-				onClose={() => setIsOpenLogin(false)}
 			/>
 			<div className='app__navbar-smallscreen'>
 				<MenuBurger />
