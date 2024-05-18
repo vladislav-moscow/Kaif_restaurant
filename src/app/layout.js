@@ -3,6 +3,7 @@ import Footer from '@/Modules/Footer/Footer';
 
 import './globals.css';
 import './app.css';
+import { UserProvider } from '@/context/UserContext';
 
 export const metadata = {
 	title: 'KAIF',
@@ -19,11 +20,13 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='ru'>
 			<body>
-				<div className='app__menu'>
-					<Navbar />
-					{children}
-					<Footer />
-				</div>
+				<UserProvider>
+					<div className='app__menu'>
+						<Navbar />
+						{children}
+						<Footer />
+					</div>
+				</UserProvider>
 			</body>
 		</html>
 	);

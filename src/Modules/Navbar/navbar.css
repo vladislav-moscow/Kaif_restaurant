@@ -54,8 +54,7 @@
 	border-bottom: 1px solid var(--color-golden);
 }
 
-
-.app__navbar-login div {
+.app__navbar-login .rightBorder {
 	width: 1px;
 	height: 30px;
 	background: var(--color-grey);
@@ -82,7 +81,6 @@
 	font-size: 27px;
 	color: var(--color-golden);
 	cursor: pointer;
-
 	position: absolute;
 	top: 20px;
 	right: 20px;
@@ -103,6 +101,41 @@
 
 .app__navbar-smallscreen_links li:hover {
 	color: var(--color-white);
+}
+
+.user-menu-container {
+	margin: 0 1rem;
+	display: flex;
+	align-items: center;
+	transition: 0.5s ease;
+}
+
+.user-menu {
+	display: none;
+	position: absolute;
+	top: 10%;
+	right: 255px;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+  z-index: 1000;
+}
+
+.user-menu-item {
+	display: block;
+	padding: 10px 15px;
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.user-menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.user-menu.block {
+  display: block;
 }
 
 @media screen and (min-width: 2000px) {
