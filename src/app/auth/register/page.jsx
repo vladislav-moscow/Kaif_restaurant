@@ -1,6 +1,7 @@
 'use client';
 
 import axios from 'axios';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 
@@ -27,8 +28,13 @@ const RegisterPage = () => {
 
 	return (
 		<div className='h-[calc(100vh-7rem)] flex justify-center items-center'>
-			<form onSubmit={onSubmit} className='w-1/4'>
-				<h2 className='text-slate-200 font-bold text-2xl mb-4'>Регистрация</h2>
+			<form
+				onSubmit={onSubmit}
+				className='w-1/4  border-2 border-solid border-white p-5'
+			>
+				<h2 className='text-slate-200 font-bold text-2xl mb-4 text-center'>
+					Регистрация
+				</h2>
 
 				<label htmlFor='username' className='text-slate-500 mb-2 block text-sm'>
 					Username:
@@ -114,6 +120,9 @@ const RegisterPage = () => {
 				<button className='w-full bg-blue-500 text-white p-3 rounded-lg mt-2'>
 					Регистрация
 				</button>
+				<span className='cursor-pointer text-white block mt-4'>
+					У вас уже есть аккаунт? <Link href='/auth/login'> ВОЙТИ </Link>
+				</span>
 			</form>
 		</div>
 	);
