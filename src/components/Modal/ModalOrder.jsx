@@ -186,147 +186,147 @@ const ModalOrder = ({ open, modalRef, onClose }) => {
 					<div id='gaps' role='group'>
 						<TimeOption
 							id='gap720'
-							value={'12:00'}
+							value='12:00'
 							label='12:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '12:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap750'
-							value={'12:30'}
+							value='12:30'
 							label='12:30'
 							onChange={handleChangeFormData}
 							className={selectedTime === '12:30' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap780'
-							value={'13:00'}
+							value='13:00'
 							label='13:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '13:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap810'
-							value={'13:30'}
+							value='13:30'
 							label='13:30'
 							onChange={handleChangeFormData}
 							className={selectedTime === '13:30' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap840'
-							value={'14:00'}
+							value='14:00'
 							label='14:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '14:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap870'
-							value={'14:30'}
+							value='14:30'
 							label='14:30'
 							onChange={handleChangeFormData}
 							className={selectedTime === '14:30' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap900'
-							value={'15:00'}
+							value='15:00'
 							label='15:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '15:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap930'
-							value={'15:30'}
+							value='15:30'
 							label='15:30'
 							onChange={handleChangeFormData}
 							className={selectedTime === '15:30' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap960'
-							value={'16:00'}
+							value='16:00'
 							label='16:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '16:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap990'
-							value={'16:30'}
+							value='16:30'
 							label='16:30'
 							onChange={handleChangeFormData}
 							className={selectedTime === '16:30' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1020'
-							value={'17:00'}
+							value='17:00'
 							label='17:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '17:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1050'
-							value={'17:30'}
+							value='17:30'
 							label='17:30'
 							onChange={handleChangeFormData}
 							className={selectedTime === '17:30' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1080'
-							value={'18:00'}
+							value='18:00'
 							label='18:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '18:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1110'
-							value={'18:30'}
+							value='18:30'
 							label='18:30'
 							onChange={handleChangeFormData}
 							className={selectedTime === '18:30' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1140'
-							value={'19:00'}
+							value='19:00'
 							label='19:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '19:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1170'
-							value={'19:30'}
+							value='19:30'
 							label='19:30'
 							onChange={handleChangeFormData}
 							className={selectedTime === '19:30' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1200'
-							value={'20:00'}
+							value='20:00'
 							label='20:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '20:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1230'
-							value={'20:30'}
+							value='20:30'
 							label='20:30'
 							onChange={handleChangeFormData}
 							className={selectedTime === '20:30' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1260'
-							value={'21:00'}
+							value='21:00'
 							label='21:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '21:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1320'
-							value={'22:00'}
+							value='22:00'
 							label='22:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '22:00' ? 'selected' : ''}
 						/>
 						<TimeOption
 							id='gap1380'
-							value={'23:00'}
+							value='23:00'
 							label='23:00'
 							onChange={handleChangeFormData}
 							className={selectedTime === '23:00' ? 'selected' : ''}

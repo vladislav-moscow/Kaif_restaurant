@@ -3,7 +3,6 @@
 import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 import Image from 'next/image';
 
-import FooterOverlay from '@/components/FooterOverlay/FooterOverlay';
 import Newsletter from '@/components/Newsletter/Newsletter';
 import logo from '@/assets/logo.svg';
 import spoon from '@/assets/spoon.svg';
@@ -51,6 +50,15 @@ const Footer = () => {
 				<p className='p__opensans'>2023 Kaif. Все права защищены.</p>
 			</div>
 		</footer>
+	);
+};
+
+const FooterOverlay = () => {
+	return (
+		<div className='app__footerOverlay'>
+			<div className='app__footerOverlay-black' />
+			<div className='app__footerOverlay-img app__bg' />
+		</div>
 	);
 };
 
