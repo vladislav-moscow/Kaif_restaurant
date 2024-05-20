@@ -13,7 +13,7 @@ const Laurels = () => {
 			<div className='app__wrapper_info'>
 				<SubHeading title='Награды & признание' />
 				<h1 className='headtext__cormorant'>Наши награды</h1>
-				<LaurelsList/>
+				<LaurelsList />
 			</div>
 			<div className='app__wrapper_img'>
 				<Image src={laurels} alt='laurels_img' />
