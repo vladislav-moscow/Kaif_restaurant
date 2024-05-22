@@ -5,13 +5,13 @@ import VideoComponentMenu from '@/components/VideoComponent/VideoComponentMenu';
 
 import './menuMain.css';
 
-const MainMenu = () => {
+const MainMenu: React.FC = () => {
 	return (
 		<>
 			<div className='app__menu-topbar'>
 				<VideoComponentMenu />
 				<Topbar />
-				<MenuTitle/>
+				<MenuTitle />
 			</div>
 		</>
 	);

@@ -9,7 +9,7 @@ import MenuBurger from '@/components/MenuItem/MenuBurger';
 import ModalOrder from '@/components/Modal/ModalOrder';
 
 import './navbar.css';
-import { useUser } from '@/context/UserCntext';
+import { useUser } from '@/context/UserContext';
 
 interface NavbarProps { }
 
