@@ -7,16 +7,11 @@ import Link from 'next/link';
 import logo from '@/assets/logo.svg';
 import MenuBurger from '@/components/MenuItem/MenuBurger';
 import ModalOrder from '@/components/Modal/ModalOrder';
-import { useUser } from '@/context/UserContext';
 
 import './navbar.css';
+import { useUser } from '@/context/UserContext';
 
 interface NavbarProps { }
-
-interface LinkItem {
-	href: string;
-	label: string;
-}
 
 const Navbar: React.FC<NavbarProps> = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);

@@ -1,9 +1,9 @@
+import { UserProvider } from '@/context/UserContext';
 import Navbar from '@/Modules/Navbar/Navbar';
 import Footer from '@/Modules/Footer/Footer';
 
 import './globals.css';
 import './app.css';
-import { UserProvider } from '@/context/UserContext';
 
 export const metadata = {
 	title: 'KAIF',

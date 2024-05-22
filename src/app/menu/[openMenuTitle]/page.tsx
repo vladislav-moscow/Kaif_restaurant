@@ -1,33 +1,57 @@
 'use client';
+
 import axios from 'axios';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
+import Topbar from '@/components/Topbar/Topbar';
 import VideoComponentMenu from '@/components/VideoComponent/VideoComponentMenu';
 
 import './openMenuTitle.css';
-import Topbar from '@/components/Topbar/Topbar';
 
-const OpenMenuTitle = ({ params }) => {
-	const [data, setData] = useState([]);
+interface MenuItem {
+	id: number;
+	title: string;
+	price: number;
+	image: string;
+	titleName: string;
+}
+
+interface OpenMenuTitleProps {
+	params: {
+		openMenuTitle: string;
+	};
+}
+
+const OpenMenuTitle: React.FC<OpenMenuTitleProps> = ({ params }) => {
+	const [data, setData] = useState<MenuItem[]>([]);
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		axios.get(`http://localhost:3001/${params.openMenuTitle}`).then((res) => {
-			setData(res.data);
-			setLoading(false);
-		});
+		const fetchData = async () => {
+			try {
+				const res = await axios.get(`http://localhost:3001/${params.openMenuTitle}`);
+				setData(res.data);
+				setLoading(false);
+			} catch (error) {
+				console.error('Ошибка при загрузке данных:', error);
+				setLoading(false);
+			}
+		};
+
+		fetchData();
 	}, [params.openMenuTitle]);
 
 	if (loading) {
-		return <div>Loading...</div>; 
+		return <div>Loading...</div>;
 	}
+
 	return (
 		<>
 			<div className='app__menu-topbar'>
 				<VideoComponentMenu />
-				<Topbar/>
-				<h3 className='app__menu-title'>{data[0].titleName}</h3>
+				<Topbar />
+				<h3 className='app__menu-title'>{data[0]?.titleName}</h3>
 				<div className='menuItem__cart'>
 					{data.map((item) => (
 						<div className='menuItem' key={item.id}>

@@ -1,5 +1,5 @@
 'use server';
-import VideoComponent from '@/components/VideoComponent/VideoComponent';
+import VideoComponent from '@/components/VideoComponent/VideoComponents';
 
 import './intro.css';
 

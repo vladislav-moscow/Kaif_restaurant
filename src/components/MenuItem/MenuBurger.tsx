@@ -1,12 +1,13 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
 
-const MenuBurger = () => {
-	const [toggleMenu, setToggleMenu] = useState(false);
+const MenuBurger: React.FC = () => {
+	const [toggleMenu, setToggleMenu] = useState<boolean>(false);
+
 	return (
 		<>
 			<GiHamburgerMenu
@@ -28,9 +29,9 @@ const MenuBurger = () => {
 							</Link>
 						</li>
 						<li>
-							<a href='#about' onClick={() => setToggleMenu(false)}>
+							<Link href='#about' onClick={() => setToggleMenu(false)}>
 								О Нас
-							</a>
+							</Link>
 						</li>
 						<li>
 							<Link href='/menu' onClick={() => setToggleMenu(false)}>
@@ -38,14 +39,14 @@ const MenuBurger = () => {
 							</Link>
 						</li>
 						<li>
-							<a href='#awards' onClick={() => setToggleMenu(false)}>
+							<Link href='#awards' onClick={() => setToggleMenu(false)}>
 								Награды
-							</a>
+							</Link>
 						</li>
 						<li>
-							<a href='#contact' onClick={() => setToggleMenu(false)}>
+							<Link href='#contact' onClick={() => setToggleMenu(false)}>
 								Контакты
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
